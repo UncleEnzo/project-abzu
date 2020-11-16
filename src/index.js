@@ -7,11 +7,9 @@ const domain = process.env.REACT_APP_AUTH0_DOMAIN;
 const clientID = process.env.REACT_APP_AUTH0_ID;
 
 ReactDOM.render(
-<Auth0Provider
-  domain={domain}
-  clientId={clientID}
-  redirectUri={window.location.origin}>
+  <Auth0Provider domain={domain} clientId={clientID}
+    redirectUri={window.location.origin}>
     <App />
-    </Auth0Provider>,
+  </Auth0Provider>,
   document.getElementById('root')
 );
